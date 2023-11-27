@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/responsive.css">
+  <title>VapeHub</title>
+</head>
+<body>
+
+    <div class="banner-section">
+        <div class="banner-info">
+          <img src="img/icons/livraison.png" alt="Livraison Icon">
+          <span>Livraison partout à Libreville en -48h</span>
+        </div>
+        <div class="banner-info">
+          <img src="img/icons/securepay.png" alt="Paiement Sécurisé Icon">
+          <span>Paiement sécurisé</span>
+        </div>
+        <div class="banner-info">
+          <img src="img/icons/support.png" alt="Support 24/24 Icon">
+          <span>Support 24h/24</span>
+        </div>
+      </div>
+
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <!-- Ajoutez votre icône de menu ici -->
+        ☰
+      </div>
+    <a href=""><div class="logo"><img src="img/logo.png" alt="Logo de VapeHub"></div></a>
+    <nav>
+      <ul>
+        <li><a href="#">Produits</a>
+          <ul>
+            <li><a href="#">Vape</a></li>
+            <li><a href="#">Nicotine</a></li>
+            <li><a href="#">Accessoires</a></li>
+          </ul>
+        </li>
+        <li><a href="#">À Propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Mon compte</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+
+  <section class="image-section">
+    <a href=""><img src="img/bgg.jpg" alt="Image Vape" class="background-image"></a>
+    <h2 class="promo-title">𝒫𝓇𝑜𝒻𝒾𝓉𝑒𝓏 𝒹𝑒𝓈 𝓅𝓇𝑜𝓂𝑜𝓉𝒾𝑜𝓃𝓈 !!!</h2>
+    <a href="https://www.google.com/"><button class="buy-button">Acheter</button></a>
+  </section>
+
+  <section class="countdown-section">
+    <div class="countdown-container">
+        <h2 class="countdown-title">⚡ VENTE FLASH | Se termine dans:</h2>
+        <div id="countdown" class="countdown">
+            <div class="countdown-block">
+                <span class="countdown-digit" id="days"></span>
+                <span class="countdown-label">Jours</span>
+            </div>
+            <div class="countdown-block">
+                <span class="countdown-digit" id="hours"></span>
+                <span class="countdown-label">Heures</span>
+            </div>
+            <div class="countdown-block">
+                <span class="countdown-digit" id="minutes"></span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-block">
+                <span class="countdown-digit" id="seconds"></span>
+                <span class="countdown-label">Secondes</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <script src="assets/nav.js"></script>
+  <script src="assets/rebours.js"></script>
+</body>
+</html>

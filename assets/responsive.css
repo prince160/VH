@@ -1,0 +1,98 @@
+/* responsive.css */
+
+/* Styles pour les écrans de petite taille (par exemple, smartphones) */
+@media screen and (max-width: 767px) {
+
+    /* Logo à l'extrême gauche et icône de menu à l'extrême droite */
+    header {
+      flex-direction: row; /* Changement de la direction à la ligne pour mettre le logo et le menu côte à côte */
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .logo img {
+      width: 80px; /* Ajuste la largeur du logo pour les petits écrans */
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      order: 2; /* Change l'ordre pour mettre l'icône de menu à l'extrême droite */
+      z-index: 2;
+    }
+  
+    nav {
+      width: auto; /* Supprime la largeur fixe pour permettre au menu de s'adapter à la largeur du contenu */
+      display: flex;
+      justify-content: flex-end; /* Aligne le menu à l'extrême droite */
+      align-items: center;
+    }
+  
+    nav ul {
+      display: none; /* Cache le menu par défaut sur les petits écrans */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0; /* Ajuste la position à l'extrême droite */
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+    }
+  
+    nav ul li {
+      margin: 0;
+    }
+  
+    nav ul li a {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .banner-section {
+        flex-direction: row; /* Changer de colonne à ligne */
+        justify-content: space-around; /* Aligner les éléments horizontalement */
+      }
+    
+      .banner-info {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 10px; /* Ajouter de l'espace à droite de chaque élément */
+        flex: 1; /* Chaque élément prend autant d'espace que possible */
+      }
+    
+      .banner-info img {
+        width: 30px; /* Réduire la taille de l'icône */
+        margin-right: 5px; /* Ajout de marge entre l'icône et le texte */
+      }
+    
+      .banner-info span {
+        font-size: 12px; /* Réduire la taille du texte */
+        flex: 1; /* Faire en sorte que le texte occupe l'espace restant */
+        white-space: nowrap; /* Empêcher le retour à la ligne */
+        overflow: hidden; /* Cacher le texte excédentaire s'il dépasse */
+        text-overflow: ellipsis; /* Ajouter des points de suspension si le texte est trop long */
+      }
+
+    
+  .countdown-container {
+    max-width: 100%; /* Ajuste la largeur maximale pour occuper la largeur de l'écran */
+  }
+
+  .countdown-block {
+    margin: 5px; /* Espacement entre les blocs réduit */
+    padding: 5px; /* Espacement intérieur réduit */
+  }
+
+  .countdown-digit {
+    font-size: 18px; /* Taille de police réduite pour les chiffres du compte à rebours */
+  }
+
+  .countdown-label {
+    font-size: 10px; /* Taille de police réduite pour les libellés du compte à rebours */
+  }
+
+  }
